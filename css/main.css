@@ -1,0 +1,225 @@
+body{
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.6s ease-in-out 0s;
+}
+/*custom cover*/
+div.cover{
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    background-color: #0088d3;
+}
+.spinner {
+    color: red;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    position: relative;
+    margin: 0px auto;
+}
+.spinner:before {
+    content:  "\2713";
+    color:transparent;
+    background-image: url("../img/logo-smb-load.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+}
+
+.double-bounce1, .double-bounce2 {
+    content:  "\00A9";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.44);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+      }
+}
+
+/*custom section back image*/
+section.backImage{
+    /*height: 100vh;*/
+    background: linear-gradient(50deg, #F62D51, HSLA(205, 62%, 44%, 1));
+    padding-top: 190px;
+}
+
+/*Custom reset container*/
+.container-wide {
+    padding: 0 2em;
+    padding-right: 0;
+}
+.container-wide2{
+    padding: 0 8%;
+}
+
+/*Custom reset padding*/
+div.resetPadding{
+    /*padding: 0 !important;*/
+}
+
+section.no-bottom-padding{
+    padding-bottom:0 !important;
+}
+div.no-margin-bottom{
+    margin-bottom:0 !important;
+}
+div.colorTextWhite{
+    color: white;
+}
+div.valign{
+    text-align: right!important;
+}
+/*Nav custom*/
+
+nav{
+    padding: 30px 0 0;
+    height: 50px;
+    background-color: transparent !important;
+    position: absolute !important;
+    box-shadow: none !important;
+}
+
+h1.title{
+    font-size: 2.500em;
+    line-height: 40px;
+    margin: 0;
+    font-weight: 300;
+    max-width: 400px;
+    padding-bottom: 40px;
+}
+
+h1.titleSection{
+    font-size: 2.500em;
+    /*font-weight: 300;*/
+    max-width: 400px;
+    font-weight: 100;
+    line-height: 48px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+h2.description{
+    margin-top: 0;
+    font-size: 1.125em;
+    line-height: 26px;
+    font-weight: 300;
+    max-width: 500px;
+}
+.contentButton{
+    margin-top: 25px !important;
+}
+.width100{
+    width: 100%;
+    margin: auto !important;
+    text-align: center;
+}
+.spacePadding{
+    padding-top: 6% !important;
+}
+.textPre{
+    font-size: 1.125em;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-weight: 100;
+    line-height: 24px;
+    padding: 1em 0px;
+}
+.textCard{
+    font-size: 1.125em;
+    margin: auto;
+    font-weight: 100;
+    line-height: 24px;
+}
+.logopaddingr{
+    padding-right: 3%;
+    cursor: pointer;
+}
+.buttonTopPadding{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.paddingButtonTopFixed{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.footercolor{
+    color:#1d39d6;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-weight: normal;
+}
+.subbold1{
+    font-weight: bold;
+}
+.subbold3{
+    font-weight: bold;
+    font-size: larger;
+}
+.bullets li{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    list-style-type: initial !important;
+}
+.brakeWordGeneral{
+    word-wrap: break-word;
+}
+
+div.card{
+    height: -webkit-fill-available;
+    max-height: 427px;
+}
+
+@media (min-width: 601px) {
+    .contentButton{
+        margin-bottom: 35px !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .contentButton{
+        font-size: 0.875em !important;
+        margin-bottom: 47px !important;
+    }
+    .contentButton2 {
+        font-size: 0.750em !important;
+        /* margin-bottom: 47px !important; */
+    }
+}
+
+@media (min-width: 600px) {
+    div.no-right-padding {
+        padding-right: 0 !important;
+    }
+}
