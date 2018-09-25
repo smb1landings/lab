@@ -8,4 +8,4 @@ setTimeout(
             //$.when($("div.cover").fadeOut()).then($("body").css("background-color","black"));
             $.when($("div.cover").fadeOut());
         });
-    }, 700);
+    }, 1000);

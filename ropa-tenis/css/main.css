@@ -1,0 +1,235 @@
+@font-face {
+    font-family: smbbold;
+    src: url('../font/Oswald/Oswald-Bold.ttf');
+}
+@font-face {
+    font-family: smbregular;
+    src: url('../font/Oswald/Oswald-Regular.ttf');
+}
+
+body{
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.6s ease-in-out 0s;
+}
+div.cover{
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    background-color: #64b5f6;
+}
+.spinner {
+    color: red;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    position: relative;
+    margin: 0px auto;
+}
+.spinner:before {
+    content:  "\2713";
+    color:transparent;
+    background-image: url("../img/logo-smb-load.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+}
+
+.double-bounce1, .double-bounce2 {
+    content:  "\00A9";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.44);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+      }
+}
+
+
+
+
+
+nav{
+width: 100%;
+    height: 69px;
+    line-height: 69px;
+    box-shadow: none;
+    background-color: white;
+    border-bottom: 1px solid #E5E5E5;
+}
+nav .nav-wrapper{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.backimage1{
+background-image: url("https://source.unsplash.com/collection/3140670/");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.backimage2, .backimage3, .backimage4, .backimage5, .backimage6, .backimage7{
+    height:556px;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.backimage2{
+    background-image: url("https://source.unsplash.com/collection/3139170/");
+}
+.backimage3{
+    background-image: url("https://source.unsplash.com/collection/3140507/");
+}
+.backimage4{
+    background-image: url("https://source.unsplash.com/collection/3144035/");
+}
+.backimage5{
+    background-image: url("https://source.unsplash.com/collection/3144278/");
+}
+.backimage6{
+    background-image: url("https://source.unsplash.com/collection/3144467/");
+}
+.backimage7{
+    background-image: url("https://source.unsplash.com/collection/3144620/");
+}
+
+
+.titlepage1{
+    height: 65px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.titlepage1 h1{
+    font-family: smbbold;
+    font-weight: 700;
+    font-size: 1em;
+    margin: 10px 0px !important;
+    text-transform: uppercase;
+    line-height: 41px;
+    letter-spacing: .01em;
+}
+
+article h2{
+    font-family: smbbold;
+    font-weight: 700;
+    font-size: 1em;
+    margin: 10px 0px !important;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+}
+
+.clearmarginbottom{
+    margin-bottom: 0 !important;
+}
+.redcolor{
+    color: red;
+}
+p{
+    font-size: 0.875em;
+    margin-bottom: 10px;
+}
+
+.textfooter{
+    font-family: smbregular;
+    color: white;
+    letter-spacing: .03em;
+    font-size: 0.750em;
+    line-height: 51px;
+}
+
+.contentDirection{
+    border-top: 1px solid #444;
+    padding-top: 12px !important;
+}
+
+.textfooterDirection{
+    font-family: smbregular;
+    color: #cfcfcf;
+    letter-spacing: 0.05em;
+    font-size: 0.625em;
+    text-align: center;
+
+}
+
+.paddingButtonTopFixed{
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.textAnuncio{
+    font-family: smbregular;
+    color: white;
+    letter-spacing: .03em;
+    font-size: 1em;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+
+.contentButton{
+    font-size: 0.625em;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+#acctionbuttoncontent{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background-color: rgb(60, 60, 60);
+    padding: 1%;
+}
+
+@media (max-width: 600px){
+    .backimage1, .backimage2, .backimage3, .backimage4, .backimage5, .backimage6, .backimage7{
+        /*background-size: contain !important;*/
+        height: 384px !important;
+        background-position: 50% !important;
+    }
+    .titlepage1 h1, article h2{
+        font-size: 0.813em !important;
+        line-height: 20px !important;
+    }
+
+.textfooterDirection{
+    line-height: 15px;
+}
+}
