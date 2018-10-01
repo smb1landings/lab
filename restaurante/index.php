@@ -1,16 +1,10 @@
 <?php
 $path=$_SERVER['REQUEST_URI'];
-/*echo $path.'<br>';*/
 $titlePage="";
 $descriptionPage="";
-$canonicalUrl="";
-/*if($path=="/ropa-tenis"){
-    echo ("tenis");
-}*/
-if($path=="/trajes-hombre" || $path=="/trajes-hombre/"){
+if($path=="/trajes-hombre"){
     $titlePage="Promociones trajes para hombre | Membresía familiar SMB";
     $descriptionPage="Promociones en trajes para hombre, sacos, camisas y pantalones de vestir hasta en un 50% de descuento.";
-	$canonicalUrl="https://promocionessmb.com/trajes-hombre";
     $firstPromotion='<!--kurian-->
 <section>
     <article>
@@ -102,10 +96,9 @@ if($path=="/trajes-hombre" || $path=="/trajes-hombre/"){
 	';
 }
 
-if($path=="/ropa-deportiva"||$path=="/ropa-deportiva/"){
+if($path=="/ropa-deportiva"){
 	$titlePage="Promociones en ropa deportiva | Membresía familiar SMB";
 	$descriptionPage="Promociones en ropa deportiva, tenis y accesorios para gimnasio hasta en un 15% de descuento.";
-	$canonicalUrl="https://promocionessmb.com/ropa-deportiva";
 	$firstPromotion='
 	<!--nike-->
 <section>
@@ -203,7 +196,6 @@ $oldPromotion.='
 if($path=="/trajes-bano"){
 	$titlePage="Promociones en trajes de baño | Membresía familiar SMB";
 	$descriptionPage="Promociones en trajes de baño, hasta en un 10% de descuento.";
-	$canonicalUrl="https://promocionessmb.com/trajes-bano";
     $firstPromotion='    
     <!--swim-->
 <section>
@@ -323,7 +315,7 @@ if($path=="/trajes-bano"){
     <meta name="keywords" content="promociones, promociones en ropa, promociones en tenis, promociones en zapatos, descuentos en ropa, descuentos en tenis, descuentos en zapatos, cupones, descuentos"/>
     <meta name="robots" content="index, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="<?php echo($canonicalUrl); ?>"/>
+    <link rel="canonical" href="https://promocionessmb.com/ropa-tenis"/>
     <title><?php echo($titlePage); ?></title>
     <link href="https://promocionessmb.com/ropa-tenis/smb2.ico" rel="shortcut icon" type="image/x-icon"/>
     <link rel="preload" href="css/reset-css.css" as="style" onload="this.onload=null;this.rel='stylesheet'">

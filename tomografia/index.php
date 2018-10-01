@@ -1,17 +1,11 @@
 <?php
 $path=$_SERVER['REQUEST_URI'];
-/*echo $path.'<br>';*/
 $titlePage="";
 $descriptionPage="";
-$canonicalUrl="";
-/*if($path=="/ropa-tenis"){
-    echo ("tenis");
-}*/
-if($path=="/trajes-hombre" || $path=="/trajes-hombre/"){
-    $titlePage="Promociones trajes para hombre | Membresía familiar SMB";
-    $descriptionPage="Promociones en trajes para hombre, sacos, camisas y pantalones de vestir hasta en un 50% de descuento.";
-	$canonicalUrl="https://promocionessmb.com/trajes-hombre";
-    $firstPromotion='<!--kurian-->
+if($path=="/laboratorio"){
+    $titlePage="Promociones en laboratorios y análisis clínicos | Membresía familiar SMB";
+    $descriptionPage="Promociones en análisis clínicos y de gabinete hasta con un 40% de descuento.";
+    $firstPromotion='<!--LMP-->
 <section>
     <article>
         <div class="container-wide">
@@ -25,22 +19,22 @@ if($path=="/trajes-hombre" || $path=="/trajes-hombre/"){
         <div class="row">
             <div class="col s12 m12 l12 xl12 center">
                 <img src="img/kurian.jpeg" height="120" width="120" alt="KURIAN">
-                <h2>KURIAN, ES UNA EMPRESA 100% MEXICANA QUE PRODUCE Y EXPORTA CASIMIRES Y MANUFACTURA TRAJES DE VESTIR PARA CABALLERO.</h2>
+                <h2>Laboratorio Médico Polanco</h2>
                 <h2>Promoción</h2>
                 <p>
-                    <span class="red-text">50%</span> de descuento en trajes para hombre, sacos, camisas y pantalones de vestir.<br>
+                    <span class="red-text">50%</span> de descuento en estudi.<br>
                     <span class="red-text">20%</span> en calcetines, cinturones sobre el precio de lista.<br>
                     Servicio de sastrería sin costo.
                 </p>
 
-                <a class="waves-effect waves-light waves-red blue-grey lighten-5 red-text btn-flat" href="https://www.servicioshuman.mx/promocion-kurian-134" target="_blank">Detalles</a>
+                <a class="waves-effect waves-light waves-red blue-grey lighten-5 red-text btn-flat" href="https://www.servicioshuman.mx/promocion-laboratorio-m%C3%A9dico-polanco-178" target="_blank">Detalles</a>
 
             </div>
         </div>
     </div>
     </article>
 </section>
-<!--end kurian-->
+<!--end LMP-->
     ';
     $oldPromotion.='<!--nike-->
 <section>
@@ -101,11 +95,9 @@ if($path=="/trajes-hombre" || $path=="/trajes-hombre/"){
 <!--end swim-->
 	';
 }
-
-if($path=="/ropa-deportiva"||$path=="/ropa-deportiva/"){
+if($path=="/ropa-deportiva"){
 	$titlePage="Promociones en ropa deportiva | Membresía familiar SMB";
 	$descriptionPage="Promociones en ropa deportiva, tenis y accesorios para gimnasio hasta en un 15% de descuento.";
-	$canonicalUrl="https://promocionessmb.com/ropa-deportiva";
 	$firstPromotion='
 	<!--nike-->
 <section>
@@ -203,7 +195,6 @@ $oldPromotion.='
 if($path=="/trajes-bano"){
 	$titlePage="Promociones en trajes de baño | Membresía familiar SMB";
 	$descriptionPage="Promociones en trajes de baño, hasta en un 10% de descuento.";
-	$canonicalUrl="https://promocionessmb.com/trajes-bano";
     $firstPromotion='    
     <!--swim-->
 <section>
@@ -323,7 +314,7 @@ if($path=="/trajes-bano"){
     <meta name="keywords" content="promociones, promociones en ropa, promociones en tenis, promociones en zapatos, descuentos en ropa, descuentos en tenis, descuentos en zapatos, cupones, descuentos"/>
     <meta name="robots" content="index, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="<?php echo($canonicalUrl); ?>"/>
+    <link rel="canonical" href="https://promocionessmb.com/ropa-tenis"/>
     <title><?php echo($titlePage); ?></title>
     <link href="https://promocionessmb.com/ropa-tenis/smb2.ico" rel="shortcut icon" type="image/x-icon"/>
     <link rel="preload" href="css/reset-css.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -384,7 +375,7 @@ if($path=="/trajes-bano"){
     <div class="container-wide titlepage1 center">
         <div class="row clearmarginbottom">
             <div class="col s12 m12 l12 xl12">
-                <h1>Promociones en ropa (trajes para hombre, vestidos de noche), tenis (ropa deportiva, trajes de baño) hasta en un <span class="red-text">50% de descuento</span>. <a class="btn-small pink accent-3 contentButton waves-effect waves-light center" href="https://www.servicioshuman.mx/tarjetasmb/red-comercial.html?secc1=red-comercial_moda" target="_blank">Más promociones</a></h1>
+                <h1>Promociones en laboratorios médicos, estudios clínicos y radiología hasta en un <span class="red-text">50% de descuento</span>. <a class="btn-small pink accent-3 contentButton waves-effect waves-light center" href="https://www.servicioshuman.mx/tarjetasmb/red-comercial.html?secc1=red-comercial_moda" target="_blank">Más promociones</a></h1>
             </div>
         </div>
     </div>
@@ -406,12 +397,12 @@ if($path=="/trajes-bano"){
             <div class="row">
                 <div class="col s12 m12 l12 xl12 center">
                     <img src="img/innovasport.jpeg" height="120" width="120" alt="INNOVASPORT">
-                    <h2>INNOVASPORT, CONVERTIMOS EL DEPORTE EN UN ESTILO DE VIDA #WELIVESPORTS.</h2>
+                    <h2>EN LABORATORIOS MÉDICOS POLANCO, OFRECEMOS INFORMACIÓN CONFIABLE Y OPORTUNA PARA EL DIAGNÓSTICO MÉDICO</h2>
                     <h2>Promoción</h2>
                     <p>
-                        <span class="red-text">10%</span> de descuento en todas tus compras (excepto artículos electrónicos).<br>
+                        <span class="red-text">40%</span> de descuento en análisis clínicos y de gabinete.<br>
                     </p>
-                    <a class="waves-effect waves-light waves-red blue-grey lighten-5 red-text btn-flat" href="https://www.servicioshuman.mx/promociones/innovasport.pdf" target="_blank">Detalles</a>
+                    <a class="waves-effect waves-light waves-red blue-grey lighten-5 red-text btn-flat" href="https://www.servicioshuman.mx/promociones/laboratorio-medico-polanco.pdf" target="_blank">Detalles</a>
                 </div>
             </div>
         </div>
