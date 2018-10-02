@@ -2,6 +2,8 @@
 $path=$_SERVER['REQUEST_URI'];
 $titlePage="";
 $descriptionPage="";
+$firstPromotion="";
+$oldPromotion="";
 if($path=="/laboratorio"){
     $titlePage="Promociones en laboratorios y análisis clínicos | Membresía familiar SMB";
     $descriptionPage="Promociones en análisis clínicos y de gabinete hasta con un 40% de descuento.";

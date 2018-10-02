@@ -2,8 +2,17 @@
 $path=$_SERVER['REQUEST_URI'];
 $titlePage="";
 $descriptionPage="";
-if($path=="/trajes-hombre"){
-    $titlePage="Promociones trajes para hombre | Membresía familiar SMB";
+$headerPrincipal="";
+echo($path);
+if($path="/restaurante" || $path="/restaurante/"){
+    $headerPrincipal='Promociones en restaurantes hasta en un <span class="red-text">50% de descuento</span>.&nbsp;';
+}
+
+
+
+
+if($path=="/buffet"){
+    $titlePage="Promociones buffet | Membresía familiar SMB";
     $descriptionPage="Promociones en trajes para hombre, sacos, camisas y pantalones de vestir hasta en un 50% de descuento.";
     $firstPromotion='<!--kurian-->
 <section>
@@ -317,7 +326,7 @@ if($path=="/trajes-bano"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://promocionessmb.com/ropa-tenis"/>
     <title><?php echo($titlePage); ?></title>
-    <link href="https://promocionessmb.com/ropa-tenis/smb2.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="https://promocionessmb.com/restaurante/smb.ico" rel="shortcut icon" type="image/x-icon"/>
     <link rel="preload" href="css/reset-css.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/materialicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/materialize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -376,7 +385,7 @@ if($path=="/trajes-bano"){
     <div class="container-wide titlepage1 center">
         <div class="row clearmarginbottom">
             <div class="col s12 m12 l12 xl12">
-                <h1>Promociones en ropa (trajes para hombre, vestidos de noche), tenis (ropa deportiva, trajes de baño) hasta en un <span class="red-text">50% de descuento</span>. <a class="btn-small pink accent-3 contentButton waves-effect waves-light center" href="https://www.servicioshuman.mx/tarjetasmb/red-comercial.html?secc1=red-comercial_moda" target="_blank">Más promociones</a></h1>
+                <h1><?php echo($headerPrincipal); ?><a class="btn-small pink accent-3 contentButton waves-effect waves-light center" href="https://www.servicioshuman.mx/tarjetasmb/red-comercial.html?secc1=red-comercial_moda" target="_blank">Más promociones</a></h1>
             </div>
         </div>
     </div>
