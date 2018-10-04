@@ -3,7 +3,6 @@
 		<div class="container-wide">
 			<div class="row">
 				<div class="col s12 m12 l12 xl12 backimage1">
-					&nbsp;
 				</div>
 			</div>
 		</div>
@@ -16,7 +15,7 @@
 					<p>
 						<span class="red-text">50%</span> de descuento en el servicio de buffet.<br>
 					</p>
-					<a class="waves-effect waves-light waves-red blue-grey lighten-5 red-text btn-flat" href="<?php echo($urlPromotions); ?>" target="_blank">Detalles</a>
+					<a class="waves-effect waves-light waves-red blue-grey lighten-5 red-text btn-flat" href="<?php echo($urlPromotions); ?>" target="_blank">Mas Promociónes</a>
 				</div>
 			</div>
 		</div>

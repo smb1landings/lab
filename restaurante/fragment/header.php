@@ -3,7 +3,6 @@
 	xmlns:fb="http://www.facebook.com/2008/fbml">
 <html lang="es-MX">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68619307-2"></script>
 	<script>
         window.dataLayer = window.dataLayer || [];

@@ -98,7 +98,7 @@ background-image: url("https://source.unsplash.com/collection/3140670/");
     background-position: 50%;
 }*/
 
-.backimage1, .backimage2, .backimage3, .backimage4, .backimage5, .backimage6, .backimage7{
+.backimage1, .backimage2, .backimage3, .backimage4, .backimage5, .backimage6, .backimage7, .backimage8, .backimage9, .backimage10, .backimage11, .backimage12, .backimage13, .backimage14, .backimage15, .backimage16, .backimage17, .backimage18, .backimage19, .backimage20{
     height:505px;
     background-repeat: no-repeat;
     background-position: inherit;
@@ -107,27 +107,65 @@ background-image: url("https://source.unsplash.com/collection/3140670/");
 }
 
 .backimage1{
-    background-image: url("https://source.unsplash.com/collection/3297154/");
+    background-image: url("https://source.unsplash.com/collection/3297154/");/*Bistro Fusion Buffet*/
 }
 .backimage2{
-    background-image: url("https://source.unsplash.com/collection/3139170/");
+    background-image: url("https://source.unsplash.com/collection/3302569/");/*La Chilanguita*/
 }
 .backimage3{
-    background-image: url("https://source.unsplash.com/collection/3140507/");
+    background-image: url("https://source.unsplash.com/collection/3298120/");/*La Strega*/
 }
 .backimage4{
-    background-image: url("https://source.unsplash.com/collection/3144035/");
+    background-image: url("https://source.unsplash.com/collection/1321611/");/*tacos*/
 }
 .backimage5{
-    background-image: url("https://source.unsplash.com/collection/3144278/");
+    background-image: url("https://source.unsplash.com/collection/3302839/");/*sushi*/
 }
 .backimage6{
-    background-image: url("https://source.unsplash.com/collection/3144467/");
+    background-image: url("https://source.unsplash.com/collection/3302971/");/*yoko*/
 }
 .backimage7{
-    background-image: url("https://source.unsplash.com/collection/3144620/");
+    background-image: url("https://source.unsplash.com/collection/3303199/");/*sal de mar*/
 }
-
+.backimage8{
+    background-image: url("https://source.unsplash.com/collection/3303209/");/*barrita de mar*/
+}
+.backimage9{
+    background-image: url("https://source.unsplash.com/collection/3303229/");/*picanteria*/
+}
+.backimage10{
+    background-image: url("https://source.unsplash.com/collection/3303144/");/*mexicano-100*/
+}
+.backimage11{
+    background-image: url("https://source.unsplash.com/collection/3303161/");/*rebozos*/
+}
+.backimage12{
+    background-image: url("https://source.unsplash.com/collection/3303179/");/*maria-linda*/
+}
+.backimage13{
+    background-image: url("https://source.unsplash.com/collection/3303404/");/*la-esquina*/
+}
+.backimage14{
+    background-image: url("https://source.unsplash.com/collection/3303358/");/*be-bops*/
+}
+.backimage15{
+    background-image: url("https://source.unsplash.com/collection/3303179/");/*beer-love*/
+}
+.backimage16{
+    background-image: url("https://source.unsplash.com/collection/3303484/");/*desayuno*/
+}
+.backimage17{
+    background-image: url("https://source.unsplash.com/collection/3303462/");/*lola-cafe*/
+}
+.backimage18{
+    background-image: url("https://source.unsplash.com/collection/3303469/");/*coffeset*/
+}
+.backimage19{
+    background-image: url("https://source.unsplash.com/collection/3303474/");/*coyametla*/
+}
+.backimage20{
+    background-image: url("https://source.unsplash.com/collection/3303481/");/*crepatk*/
+}
 
 .titlepage1{
     /*height: 65px;*/
@@ -223,7 +261,7 @@ p{
 }
 
 @media (max-width: 600px){
-    .backimage1, .backimage2, .backimage3, .backimage4, .backimage5, .backimage6, .backimage7{
+    .backimage1, .backimage2, .backimage3, .backimage4, .backimage5, .backimage6, .backimage7, .backimage8, .backimage9, .backimage10, .backimage11, .backimage12, .backimage13, .backimage14, .backimage15, .backimage16, .backimage17, .backimage18, .backimage19, .backimage20{
         /*background-size: contain !important;*/
         height: 384px !important;
         background-position: 50% !important;
